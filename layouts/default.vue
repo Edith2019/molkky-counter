@@ -1,20 +1,19 @@
 <template>
   <div class="layout">
-    <p class="layout__test">testing layout</p>
+    <Header />
   </div>
 </template>
 
 <script>
-export default {};
+import Header from "~/components/Header";
+export default {
+  name: "layout",
+  components: { Header },
+};
 </script>
 
 <style lang="scss">
 .layout {
-  width: 500px;
-  height: 500px;
-  background-color: blue;
-  &__test {
-    color: pink;
-  }
+  height: auto;
 }
 </style>

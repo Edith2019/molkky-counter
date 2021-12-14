@@ -1,9 +1,10 @@
 <template>
-  <layout />
+  <layout> </layout>
 </template>
 
 <script>
-import Layout from "~/layout/General";
+import Layout from "~/layouts/default";
+
 export default {
   name: "IndexPage",
   components: {

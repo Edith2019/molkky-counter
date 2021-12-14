@@ -1,4 +1,7 @@
 {
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
   "PlayersData": {
     "description": "Auto imported from components/PlayersData.vue"
   }
