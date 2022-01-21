@@ -2,6 +2,9 @@
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },
+  "LandingPage": {
+    "description": "Auto imported from components/LandingPage.vue"
+  },
   "PlayersData": {
     "description": "Auto imported from components/PlayersData.vue"
   }

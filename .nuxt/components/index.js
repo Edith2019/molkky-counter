@@ -1,4 +1,5 @@
 export { default as Header } from '../../components/Header.vue'
+export { default as LandingPage } from '../../components/LandingPage.vue'
 export { default as PlayersData } from '../../components/PlayersData.vue'
 
 // nuxt/nuxt.js#8607
