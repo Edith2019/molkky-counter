@@ -1,3 +1,5 @@
+import { resolve } from 'path'
+const vueCompositionAPIFullpath = resolve("./node_modules/@vue/composition-api/dist/vue-composition-api.mjs");
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -45,5 +47,24 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  // vue compo and nuxt only worked with this https://github.com/vueuse/vueuse/issues/897
+  alias: {
+    '@vue/composition-api$': '@vue/composition-api/dist/vue-composition-api.mjs',
+    '@vue/composition-api/dist/vue-composition-api.mjs': vueCompositionAPIFullpath,
+  },
+  build: {
+    extend(config) {
+      config.module.rules.push({
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: "javascript/auto"
+      });
+    }
+  },
+
+  buildModules: [
+    '@nuxtjs/composition-api/module'
+  ]
+
 }
