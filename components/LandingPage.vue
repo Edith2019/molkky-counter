@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { reactive, toRefs, computed } from "@nuxtjs/composition-api";
+import { reactive, toRefs } from "@nuxtjs/composition-api";
 
 export default {
   name: "LandingPage",
