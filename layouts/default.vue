@@ -1,27 +1,28 @@
 <template>
   <div class="layout">
-    <Header />
-    <div class="layout__content">
+    <!-- <Header /> -->
+    <!-- <div class="layout__content">
       <LandingPage />
-    </div>
+    </div> -->
+    <Nuxt />
   </div>
 </template>
 
 <script>
-import Header from "~/components/Header";
-import LandingPage from "~/components/LandingPage";
+// import Header from "~/components/Header";
+// import LandingPage from "~/components/LandingPage";
 
 export default {
   name: "layout",
-  components: { LandingPage, Header },
+  // components: { Header },
 };
 </script>
 
 <style lang="scss">
 .layout {
   height: auto;
-  &__content {
-    padding: 30px;
-  }
+  // &__content {
+  padding: 30px;
+  // }
 }
 </style>
