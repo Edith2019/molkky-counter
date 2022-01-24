@@ -3,12 +3,14 @@
     "name": "team-review",
     "path": "/team-review",
     "component": "/Users/edith/molkky-counter/pages/team-review.vue",
-    "chunkName": "pages/team-review"
+    "chunkName": "pages/team-review",
+    "_name": "_582b6d15"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/edith/molkky-counter/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_83740042"
   }
 ]
